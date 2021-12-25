@@ -1,0 +1,17 @@
+n=22
+number_of_gusees =1
+print("number of guesses is limited to 10 times.")
+while(number_of_gusees<=10):
+    guess_number = int(input("guess the number!! \n"))
+    if guess_number<22:
+        print("the number you have entered is smaller !")
+    elif guess_number>22:
+        print("the number you have entered is greter !!")
+    else:
+        print("you win")
+        print(number_of_gusees,"no of gueses you took to finish")
+        break
+    print(number_of_gusees,"this should not be greater than 10 unmber of gueses..")
+    number_of_gusees= number_of_gusees+1
+if (number_of_gusees>10):
+    print("please try again")
